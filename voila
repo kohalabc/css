@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/usertags.css');
+
+:root, .theme-light {
+  --rgb-highlight : 4, 217, 255 ;
+  --highlight: var(--text-color);
+  --background: #000900;
+  --text-color: #4AEF98;
+  --close-button: var(--dnd-color) !important;
+  --online-color: #39ff14;
+  --afk-color : #FFFF33 ;
+  --dnd-couleur : #FF0000 ;
+  --streaming-color : #bc13fe ;
+  --rs-online-color: var(--online-color);
+  --rs-idle-color: var(--afk-color);
+  --rs-dnd-color: var(--dnd-color);
+  --rs-offline-color : gris ;
+  --rs-invisible-color : gris ;
+  --rs-streaming-color: var(--stream-color);
+  --interactive-hover: var(--highlight);
+  --interactive-active: var(--highlight);
+  --text-link: var(--highlight);
+  --bdfdb-blurple: var(--highlight);
+  --logo-primary: var(--highlight);
+  --focus-primary: var(--highlight);
+  --radio-group-dot-foreground: var(--highlight);
+  --scrollbar-thin-thumb: var(--highlight);
+  --scrollbar-auto-thumb: var(--highlight);
+  --scrollbar-auto-scrollbar-color-thumb: var(--highlight);
+  --scrollbar-thin-track: var(--background);
+  --scrollbar-auto-track: var(--background);
+  --scrollbar-auto-scrollbar-color-track: var(--background);
+  --activity-card-background: var(--background);
+  --background-primary: var(--background);
+  --background-mobile-primary: var(--background);
+  --background-secondaire: var(--background);
+  --background-mobile-secondaire: var(--background);
+  --background-secondaire-alt: var(--background);
+  --background-tertiary: var(--background);
+  --background-accent: var(--background);
+  --background-floating: var(--background);
+  --text-normal: var(--text-color);
+  --text-muted: var(--text-color);
+  --header-primary: var(--text-color);
+  --header-secondaire: var(--text-color);
+  --channels-default:var(--text-color);
+  --interactive-normal: var(--text-color);
+  --channeltextarea-background: var(--background);
+  --textbox-markdown-syntax: var(--background);
+}
+
+/* --== Changer la police ==-- */
+html, corps {
+  font-family : 'Share Tech Mono', monospace ;
+}
+
+/* --== Ajouter un effet CRT ==-- */
+html,body::before, .theme-dark .perksModal-fSYqOq::before,
+.standardSidebarView-3F1I7i::before, .userPopout-3XzG_A::before,
+.inner-1ilYF7::before, .container-1CE3eW::before, .resultsGroup-r_nuzN::before,
+.theme-dark .root-1gCeng::after, .container-1r6BKw.themed-ANHk51::after,
+.drawerSizingWrapper-17Mss4::after {
+  contenu: " ";
+  bloc de visualisation;
+  position : absolue ;
+  haut : 0 ;
+  à gauche : 0 ;
+  bas : 0 ;
+  à droite : 0 ;
+  arrière-plan : gradient linéaire (rgba (18, 16, 16, 0) 50 %, rgba (0, 0, 0, 0,25) 50 %), gradient linéaire (90 degrés, rgba (255, 0, 0, 0,06), rgba (0, 255, 0, 0,02), rgba (0, 0, 255, 0,06));
+  indice z : 2 ;
+  taille de l'arrière-plan : 100 % 2px, 3px 100 % ;
+  événements de pointeur : aucun ;
+}
+
+/* --== Assurez-vous que tout est toujours cliquable ==-- */
+corps *, .userPopout-3XzG_A * {
+  événements de pointeur : auto ;
+}
+
+/* --== Bon peut-être pas tout... ==-- */
+.wrapper-2q53zr, .edge-1lOOiT, .middle-2H7H6R, .half-2cquxE,
+.spoilerText-3p6IlD.hidden-HHr2R9 .inlineContent-3ZjPuv .wrapper-3WhCwL,
+.layer-2KE1M9 {
+  événements de pointeur : aucun !important;
+}
+
+.autoPointerEvents-3UGDkq {
+  événements de pointeur : auto !important;
+}
+
+.wordmarkWindows-1v0lYD svg {
+  largeur : 0px ;
+}
+
+/* Ajouter un titre personnalisé ! */
+.wordmarkWindows-1v0lYD::after {
+  contenu: '';
+  affichage : bloc en ligne ;
+  -webkit-mask-image : url ("https://cdn.discordapp.com/attachments/442036949222424576/873668134500986920/font.png");
+  -webkit-mask-repeat : pas de répétition ;
+  -webkit-mask-size : couverture ;
+  background-color: var(--highlight);
+  largeur : 240px !important;
+  hauteur : 14px !important;
+}
+
+/*
+========================================== USRBG Popouts par Tropix126. ============================================
+*/
+
+.theme-dark .headerNormal-T_seeN {
+    couleur d'arrière-plan : var(--background);
+}
+
+.userPopout-3XzG_A {
+	transformer:translateZ(0) ;
+}
+
+.headerTop-3C2Zn0 {
+    fond : transparent !important;
+    background-color : non défini ;
+}
+
+.headerInfo-30uryT *, .tabBarItem-1b8RUP *, .activity-1ythUs * {
+  color: var(--highlight) !important;
+}
+
+.userPopout-3XzG_A .wrapper-3t9DeA::after {
+	contenu: '';
+	position : fixe ;
+	haut : 0 ;
+	à gauche : 0 ;
+	largeur : 100 % ;
+	hauteur : 100 % ;
+	indice z : -1 ;
+	événements de pointeur : aucun ;
+	opacité : .5 ;
+	taille de l'arrière-plan : couverture ;
+	background-repeat : pas de répétition ;
+	background-position : var(--user-popout-position) center ;
+	image d'arrière-plan : var(--user-background);
+	-webkit-mask-image: linear-gradient(#000, transparent);
+}
+
+.userPopout-3XzG_A .header-2BwW8b,
+.userPopout-3XzG_A .scroller-2FKFPG,
+.userPopout-3XzG_A .footer-1fjuF6 {
+	indice z : 1 ;
+}
+
+.userPopout-3XzG_A {
+  --user-popout-position: centre
+}
+
+.root-SR8cQa {
+  transformer : translateZ(0) ;
+}
+.header-QKLPzZ .wrapper-3t9DeA::before {
+  contenu: '';
+  position : fixe ;
+  haut : 0 ;
+  à gauche : 0 ;
+  largeur : 100 % ;
+  hauteur : 100 % ;
+  opacité : .5 ;
+  événements de pointeur : aucun ;
+  arrière-plan : var(--user-background) centre/couverture sans répétition ;
+  -webkit-mask : linéaire-gradient (noir, transparent 80 %) ;
+}
+
+.headerInfo-30uryT,
+.tabBarItem-1b8RUP,
+.activité-1ythUs {
+  indice z : 1 ;
+  position : relative ;
+}
+
+.headerTop-3C2Zn0 {
+  fond : transparent !important;
+  background-color : non défini ;
+}
+
+.newMessagesBar-265mhP {
+  background-color: var(--highlight);
+}
+
+.newMessagesBar-265mhP * {
+  couleur : var(--background);
+}
+
+/* --== Style de la barre de message non lu ==-- */
+.isUnread-3Ef-o9 {
+  border-color: var(--highlight);
+}
+
+.isUnread-3Ef-o9 .content-1o0f9g {
+  couleur : var(--surligner);
+  bordure : 1px solide var(--highlight);
+}
+
+.wrapper-2jXpOf:hover > .unread-2lAfLh {
+  background-color: var(--highlight);
+}
+
+.unreadPill-2HyYtt {
+  background-color: var(--highlight);
+  couleur : var(--background);
+}
+
+.guildSeparator-33mFX6 {
+  background-color: var(--highlight);
+  rayon de bordure : 2px ;
+}
+
+.unreadPillCapStroke-7rkHbg {
+  couleur : var(--surligner);
+  remplissage : var(--surligner);
+}
+
+/* --== Re-colorer le(s) bouton(s) bleu/gris ==-- */
+.lookFilled-1Gx00P.colorBrand-3pXr91,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6,
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV {
+  couleur d'arrière-plan : var(--background);
+  couleur : var(--surligner);
+  bordure : 1px solide var(--highlight);
+  durée de transition : .3 s ;
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91: survolez,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6: survolez,
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+  background-color: var(--highlight);
+  couleur : var(--background);
+}
+
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6 {
+  couleur : var(--surligner);
+}
+
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover > div {
+  background-image: linear-gradient(0deg,transparent,transparent 1px,var(--highlight) 0,var(--highlight) 2px,transparent 0) !important;
+}
+
+/* --== Style du bouton d'accueil ==-- */
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+  background-color: var(--highlight);
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 chemin svg, .wrapper-1BJsBx:hover .childWrapper-anI2G9 chemin svg {
+  remplissage : var(--background);
+}
+
+.homeIcon-FuNwkv chemin {
+  remplissage : var(--surligner);
+}
+
+/* --== Style du texte du sélecteur GIF ==-- */
+
+.theme-dark .categoryText-2-8pri, .theme-light .categoryText-2-8pri *{
+  couleur : var(--surligner);
+}
+
+/* --== Blocs de code de style et notation Markdown dans la zone de saisie du chat ==-- */
+.codeBlockSyntax-2i-tMA, .syntaxAfter-hcA4AH, .syntaxBefore-1YQ9lW {
+  couleur : var(--surligner);
+}
+
+/* --== Style popout "Créer un serveur" ==-- */
+.markup-2BOw-j code {
+  bordure : 1px solide var(--highlight);
+}
+
+.colorHeaderPrimary-26Jzh- {
+  couleur : var(--surligner);
+}
+
+.root-1gCeng, .theme-light .footer-2gL1pp {
+  background-color: var(--background) !important;
+}
+
+/* --== Explorateur de serveur de styles ==-- */
+.scroller-1d5FgU {
+  couleur d'arrière-plan : var(--background);
+}
+
+.notice-2X5hT5 {
+  couleur d'arrière-plan : var(--background);
+  bordure : 1px solide var(--highlight);
+}
+
+/* --== Page Boost Server Style/Amis ==-- */
+.closeWrapper-9ScmSq, .theme-dark .perksModal-fSYqOq, .peopleList-3c4jOR, .peopleColumn-29fq28 {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style de la fenêtre emoji-autocomplete ==-- */
+.autocompleteInner-zh20B_ {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style du popout utilisateur ==-- */
+.userPopout-3XzG_A {
+  marge droite : 1vw ;
+  bordure : 1px solide var(--highlight);
+}
+
+.headerPlaying-j0WQBV, .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6,
+.headerTop-3C2Zn0 {
+  couleur d'arrière-plan : var(--background);
+}
+
+.input-cIJ7To.focused-1mmYsC, .input-cIJ7To:focus {
+  bordure : 1px solide var(--highlight);
+}
+
+.header-QKLPzZ {
+  couleur d'arrière-plan : var(--background);
+}
+
+.headerFill-adLl4x {
+  couleur d'arrière-plan : var(--background);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY, .lookInverted-2D7oAl.colorBrand-3pXr91 {
+  couleur d'arrière-plan : var(--background);
+  couleur : var(--surligner);
+  durée de transition : .3 s ;
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover, .lookInverted-2D7oAl.colorBrand-3pXr91:hover {
+  background-color: var(--highlight);
+  couleur : var(--background);
+}
+
+/* --== Fenêtre contextuelle de recherche de style ==-- */
+.input-2VB9rf {
+  couleur d'arrière-plan : var(--background);
+}
+
+.inner-1ilYF7 * {
+  font-family : 'Share Tech Mono', monospace ;
+}
+
+.resultsGroup-r_nuzN {
+  couleur d'arrière-plan : var(--background);
+}
+
+.resultsGroup-r_nuzN * {
+  color: var(--highlight) !important;
+}
+
+.theme-dark .option-96V44q:after {
+  affichage : aucun ;
+}
+
+/* --== Style popout "Réactions" ==-- */
+.theme-dark .container-1If-HZ, .theme-dark .reactors-Blmlhw, .theme-dark .scroller-1-nKid {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style page de paiement ==-- */
+.theme-dark .paymentPane-3bwJ6A div, .theme-dark .codeRedemptionRedirect-1wVR4b {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Paramètres de style audio/vidéo ==-- */
+.css-1ye7vu0, .horizontal-1ae9ci>.flex-1xMQg5:dernier enfant, .horizontal-1ae9ci>.flexChild-faoVW3:dernier enfant {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Paramètres de style "activité" ==-- */
+.theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s,
+.theme-dark .addGamePopout-2RY8Ju {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Sélecteur de couleur de style ==-- */
+.theme-dark .colorPickerCustom-2CWBn2 {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Saisie du numéro de téléphone ==-- */
+.theme-dark .elevationBorderLow-2qgTRQ {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style créer un groupe DM ==-- */
+.nameTag-m8r81H {
+  couleur : var(--surligner);
+}
+
+/* --== Style Raccourcis clavier modal ==-- */
+.theme-dark .keyboardRaccourcisModal-3piNz7 {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Boutons plus et moins du serveur Style boost ==-- */
+.theme-dark .iconWrapper-3LVgIo {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style de page de téléchargement d'emoji personnalisé ==-- */
+.theme-dark .card-FDVird:avant, .emojiRow-zIc7ZX:focus-within .emojiRemove-1k6MlJ, .emojiRow-zIc7ZX:hover .emojiRemove-1k6MlJ,
+.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style datepicker je suppose? Pourquoi ce truc est-il si alambiqué ?! ==-- */
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker,
+.theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw,
+.theme-dark .datePicker--XZbmJ,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__current-month,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__header,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover,
+.datePicker--XZbmJ .datePickerHint-3Q1Udw .hint-165cR4 {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style de téléchargement modal ==-- */
+.uploadModal-2ifh8j .inner-3nWsbo, .theme-dark .uploadModal-2ifh8j, .uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Panneau de recherche de style ==-- */
+.theme-dark .focused-2bY0OD {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style "Applications connectées" info ==-- */
+.formNotice-2_hHWR {
+  couleur d'arrière-plan : var(--background);
+}
+
+/* --== Style Inviter des amis sur ce serveur modal ==-- */
+.theme-dark .footer-1FPmkC {
+  couleur d'arrière-plan : var(--background);
+}
+
+.input-cIJ7To.focused-1mmYsC, .input-cIJ7To:focus {
+  bordure : aucune ;
+}
+
+.theme-dark .checkBoxLabel-4PWfpk, .theme-dark .footerText-2a7NxZ, .theme-dark .subText-bCySlS {
+  couleur : var(--surligner);
+}
+
+/* --== Statut personnalisé du style ==-- */
+.theme-dark .footer-2gL1pp {
+  couleur d'arrière-plan : var(--background);
+}
